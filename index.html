@@ -22,6 +22,14 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+	
+	 <style>
+    #test1 {
+      width: 100%;
+      height: 1250px;
+      display:none;
+    }
+  </style>
 
   </head>
 
@@ -243,6 +251,13 @@ Framework:</h4>
                     <br>
             
                    </h3>
+				   
+				    <h2>Resume</h2>
+          <p>Here you'll find my Education and Some of my work experience. </p>
+          <iframe src="cv-afef-baccouche.pdf" id="test1"></iframe><br>
+
+          <button class="btn btn-primary" id="button1">Consult CV</button>
+				   
           </div>
         </div>
         <div class="row">
@@ -841,6 +856,14 @@ Ce jeu a plusieurs niveaux de difficulté accrue. <br />
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+	
+	 <script>
+    $(document).ready(function() {
+      $(".btn").click(function() {
+        $("#test1").show();
+      });
+    });
+  </script>
 
   </body>
 
